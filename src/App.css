@@ -1,0 +1,370 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+:root{
+    --maincolor:#3e97a0;
+    --secondcolor:#ecb81b;
+}
+[type="submit"]{
+    cursor: pointer;
+    padding: 7px 20px;
+    border-radius: 15px;
+    background: var(--maincolor);
+    color: white;
+    border: none;
+    font-size: 16px;
+}
+input:not([type="submit"]){
+    padding: 30px 0px 10px 0px;
+    border: none;
+    border-bottom: 1px solid var(--secondcolor);
+}
+input:not([type="submit"]):focus{
+    outline: none;
+}
+input:not([type="submit"])::placeholder{
+    color: var(--maincolor);
+    font-size: 16px;
+    font-weight: bold;
+    opacity: .6;
+}
+/* ////////////////////////////////////////Header///////////////////////////////////////////// */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 3%;
+    position: relative;
+    box-shadow: 0px 0px 10px -7px black;
+    align-items: center;
+}
+.header .left .one{
+    width: 130px;
+}
+.header .left .two{
+    position: absolute;
+    left: 3%;
+    height: 80%;
+    visibility: hidden;
+}
+.header nav{
+    visibility: visible;
+    background: white;
+    position: relative;
+    z-index: 5;
+    height: 30px;
+    padding: 6px;
+}
+.header nav a{
+    padding: 0 10px;
+    text-decoration: none;
+    transition: .1s;
+}
+/* ///////////////////////////////////////////////log in///////////////////////////////////////////////////////// */
+.outlogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+.outlogin form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 20px 0;
+}
+.outlogin input:not([type="submit"]){
+    width: 260px;
+}
+.outlogin input:not([type="submit"]):focus{
+    outline: none;
+}
+.outlogin [type="Email"]::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    opacity: .8;
+}
+.pass{
+    position: relative;
+}
+.pass input::placeholder{
+    color: var(--maincolor);
+    font-size: 17px;
+    font-weight: bold;
+    opacity: .7;
+}
+.pass label{
+    bottom: 10px;
+    position: absolute;
+    right: 5px;
+    color: var(--maincolor);
+    font-weight: bold;
+    cursor: pointer;
+}
+.outlogin .forget{
+    padding: 15px 0;
+    color: black;
+    width: 100%;
+}
+.outlogin [type="submit"]{
+    width: fit-content;
+}
+.outlogin .icons{
+    padding: 20px 0;
+}
+.icons span{
+    padding-right: 15px;
+}
+.icons i{ 
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 5px;
+}
+.outlogin .sign{
+    padding: 10px 0 80px 0;
+}
+.outlogin .sign a{
+    color: var(--maincolor);
+}
+/* //////////////////////////////////////////sign up/////////////////////////////////////////// */
+.outsignup{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 40px;
+    width: 65%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.outsignup h1, .outsignup p{
+    width: 100%;
+}
+.outsignup .p1{
+    padding: 10px 0;
+}
+.outsignup .inp1{
+    width: 45%;
+}
+.outsignup .inp2{
+    width: 100%;
+}
+.outsignup .pass{
+    width: 50%;
+}
+.outsignup .outicon{
+    width: 100%;
+    display: flex;
+    padding-top: 60px;
+}
+.outsignup .icons{
+    padding-left: 50px;
+}
+.outsignup .outend{
+    padding-top: 50px;
+}
+.outsignup .outend label{
+    cursor:pointer;
+}
+.outsignup .outend input{
+    margin: 0 10px;
+    accent-color: var(--secondcolor);
+}
+/* ///////////////////////////////////Profile//////////////////////////////////////////////// */
+.outpro{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-top: 50px;
+}
+.outpro h1, .outpro p{
+    width: 100%;
+}
+.outpro h1{
+    padding-bottom: 5px;
+}
+.outpro form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.outpro form .left{
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+}
+.outpro form .right{
+    width: 48%;
+    padding-top: 31px;
+}
+.outpro form label{
+    width: 100%;
+    color: var(--maincolor);
+    font-weight: bold;
+    padding-top: 20px;
+}
+.outpro select{
+    padding: 6px 0;
+    border: none;
+    border-bottom: 1px solid var(--secondcolor);
+    margin-top: 15px;
+    color: var(--maincolor);
+    font-size: 17px;
+    font-weight: bold;
+    opacity: .7;
+}
+.outpro option{
+    cursor: pointer;
+}
+.outpro select:focus{
+    outline: none;
+}
+.outpro .file{
+    width: fit-content;
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0 10px 0;
+}
+.outpro .file input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+.outpro .file button{
+    background: var(--secondcolor);
+    padding: 7px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.outpro .pend{
+    font-size: 14px;
+    color: var(--maincolor);
+    opacity: .7;
+    width: 70%;
+}
+.outpro .divend{
+    display: flex;
+    flex-direction: column;
+}
+.outpro [type="submit"]{
+    margin: 15px 0 30px;
+    height: fit-content;
+    align-self: end;
+}
+/* /////////////////////////////////////prof1& prof2/////////////////////////////////////////// */
+
+.prof1 input{
+    width: 100%;
+}
+.prof1 .inp2{
+    padding-top: 61px;
+}
+.prof2 .out{
+    padding-top: 45px;
+}
+.prof2 .inp1, .prof2 .inp2{
+    width: 100%;
+}
+.prof2 .inp1{
+    padding-top: 54px;
+}
+.prof2 [type="checkbox"]{
+    accent-color: var(--secondcolor);
+}
+.prof2 label{
+    padding-right: 5px;
+    opacity: .7;
+}
+/* //////////////////////////////////////////////Media Quiry////////////////////////////////////////// */
+@media  (max-width:576px) {
+    .header .left .one{
+        visibility: hidden;
+    }
+    .header .left .two{
+        visibility: visible;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 45%;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        height: 110px;
+    }
+    
+    .outlogin .sign {
+        padding:0 15px
+    }
+    .outsignup {
+        width: 90%;
+    }
+    .outsignup input:not([type="submit"]){
+        width:100%
+    }
+    .outsignup .pass {
+        width: 100%;
+    }
+    .outsignup .outicon {
+        justify-content: space-around;
+    }
+    .outsignup .outend input {
+        width: fit-content;
+    }
+    .outpro{
+        width: 90%;
+        padding-top: 20px;
+    }
+    .outpro form .left, .outpro form .right {
+        width: 100%;
+    }
+    .outpro .divend{
+        flex-wrap: wrap;
+    }
+    .outpro .pend{
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .outpro [type="submit"]{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .prof1 .inp1 {
+        padding-top: 0;
+    }
+    .prof1 .inp2 {
+        padding-top: 35px;
+    }
+    .prof2 .out {
+        position: absolute;
+        bottom: 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+    }
+    .prof2 .inp1 {
+        padding-top: 0;
+    }
+}
