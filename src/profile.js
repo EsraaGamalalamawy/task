@@ -6,7 +6,7 @@ function Profile (){
 
     return(
         <div className="outpro">
-            <h1>Portfoilo information</h1>
+            <h1>Profile information</h1>
             <p>Help us by answering quistions to get you started</p>
             <form>
                 <div className="left">
