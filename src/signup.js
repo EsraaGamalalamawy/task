@@ -1,4 +1,5 @@
 import {React,useRef} from "react";
+import { NavLink } from "react-router-dom";
 function Signup (){
     const sh1=useRef()
     const sh2=useRef()
@@ -17,7 +18,7 @@ function Signup (){
                     <label onClick={()=>{sh2.current.type="text"}}>Show</label>
                 </div>
                 <div className="outicon">
-                    <input type="submit" value="Sign up" />
+                    <NavLink to="/signup">Signup</NavLink>
                     <div className="icons">
                         <span>or login with</span>
                         <i class="fa-brands fa-linkedin-in"></i>
