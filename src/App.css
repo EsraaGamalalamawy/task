@@ -172,6 +172,12 @@ input:not([type="submit"])::placeholder{
     display: flex;
     padding-top: 60px;
 }
+.outsignup .outicon a{
+    background: var(--maincolor);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 15px;
+}
 .outsignup .icons{
     padding-left: 50px;
 }
