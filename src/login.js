@@ -1,4 +1,5 @@
 import {React,useRef} from "react";
+import { NavLink } from "react-router-dom";
 function Login(){
     const sh=useRef()
     return(
@@ -21,7 +22,7 @@ function Login(){
             </div>
             <div className="sign">
                 Not a member yet ? 
-                <a href="http://localhost:3000/login"> click here to sign up</a>
+                <NavLink to="/signup">click here to sign up</NavLink>
             </div>
         </div>
     )
